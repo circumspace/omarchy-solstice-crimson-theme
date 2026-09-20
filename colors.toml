@@ -1,0 +1,59 @@
+mode = "light"
+
+# Solstice Crimson — built on the original Solaris CDE "Crimson" palette
+# (palettes/Crimson.dp in netrunner01/cde, byte-identical to NsCDE's copy;
+# four colors byte-exact from the 48-bit original). Companion to Solstice
+# Daylight (Solyaris.dp skeleton); the two originals differ only in the steel
+# slot, which is Crimson's identity.
+#
+# Chrome   #AEB2C3  grey-lavender panels, bars, menubars (exact)
+# Canvas   #FFF7E9  warm cream terminal / text-editor background (exact)
+# Steel    #718BA5  troughs, recessed surfaces, inactive border (exact)
+# Rose     #B24D7A  selection, active titlebar, focus, hover highlight (exact)
+#
+# Terminal templates bind to 'background', which carries the canvas cream;
+# desktop chrome stays via hand-pinned gtk css and the wallpaper base.
+# color0/color7 are pinned to background/foreground by the resolver.
+
+# ── Structure ────────────────────────────────────────────────────────────────
+accent               = "#B24D7A"
+selection            = "#B24D7A"
+selection_background = "#B24D7A"
+selection_foreground = "#FFFFFF"
+
+background           = "#FFF7E9"
+dark_background      = "#718BA5"
+darker_background    = "#5E606A"
+lighter_background   = "#DDDEE6"
+
+foreground           = "#000000"
+dark_foreground      = "#5E606A"
+light_foreground     = "#5D6069"
+
+# Semantic colors without a color0..color15 slot.
+orange               = "#C2591E"   # battery/low indicators; not yellow
+brown                = "#8B7355"
+
+# ── Hyprland borders ───────────────────────────────────────────────────────
+hyprland_active_border   = "#B24D7A"
+hyprland_inactive_border = "#718BA5"
+
+# ── ANSI 16-color palette (canonical) ──────────────────────────────────────
+# Yellows are hue-preserved darkenings of the CDE-extracted ambers, meeting
+# 4.5:1 (color3) / 3.5:1 (color11) on the cream canvas.
+color0  = "#FFF7E9"   # black   (pinned to background/canvas by the resolver)
+color1  = "#C23D3D"   # red
+color2  = "#4A7A5A"   # green
+color3  = "#8D6D2B"   # yellow
+color4  = "#4A6DA0"   # blue
+color5  = "#B24D7A"   # magenta (rose accent)
+color6  = "#5A8A8A"   # cyan
+color7  = "#000000"   # white   (ink — foreground)
+color8  = "#5D6069"   # br black  (muted)
+color9  = "#CF5555"   # br red
+color10 = "#5A8A6A"   # br green
+color11 = "#A18026"   # br yellow
+color12 = "#5A7DB0"   # br blue
+color13 = "#CA6592"   # br magenta
+color14 = "#6A9A9A"   # br cyan
+color15 = "#000000"   # br white  (bright foreground)

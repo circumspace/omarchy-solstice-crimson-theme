@@ -1,0 +1,98 @@
+/* Solaris CDE — GTK4 chrome and selection colors. */
+@define-color accent_bg_color #B24D7A;
+@define-color accent_fg_color #FFFFFF;
+@define-color accent_color #B24D7A;
+
+@define-color window_bg_color #AEB2C3;
+@define-color window_fg_color #000000;
+@define-color view_bg_color #FFF7E9;
+@define-color view_fg_color #000000;
+@define-color headerbar_bg_color #AEB2C3;
+@define-color headerbar_fg_color #000000;
+@define-color headerbar_backdrop_color #AEB2C3;
+@define-color sidebar_bg_color #DDDEE6;
+@define-color sidebar_fg_color #000000;
+@define-color card_bg_color #DDDEE6;
+@define-color card_fg_color #000000;
+@define-color dialog_bg_color #AEB2C3;
+@define-color dialog_fg_color #000000;
+
+@define-color theme_bg_color #AEB2C3;
+@define-color theme_fg_color #000000;
+@define-color theme_base_color #FFF7E9;
+@define-color theme_text_color #000000;
+@define-color theme_selected_bg_color #B24D7A;
+@define-color theme_selected_fg_color #FFFFFF;
+@define-color theme_unfocused_bg_color #AEB2C3;
+@define-color theme_unfocused_fg_color #000000;
+@define-color theme_unfocused_base_color #FFF7E9;
+@define-color theme_unfocused_text_color #000000;
+@define-color theme_unfocused_selected_bg_color #B24D7A;
+@define-color theme_unfocused_selected_fg_color #FFFFFF;
+
+headerbar,
+toolbar,
+menubar,
+.titlebar {
+  background-color: #AEB2C3;
+  background-image: none;
+  color: #000000;
+}
+
+window {
+  background-color: #AEB2C3;
+  background-image: none;
+  color: #000000;
+}
+
+/* Content / list surfaces. File managers render their item area on nodes the
+   @define-color tokens don't reach, so apps diverge (e.g. Strata's listview
+   falls back to a dark grey). Pin the common content nodes to the cream view
+   canvas so every file manager agrees; the :selected rules below still win
+   on specificity. */
+.view,
+textview, textview text,
+scrolledwindow > viewport,
+list, list > row,
+listview, listview > row,
+columnview, columnview > row,
+gridview, gridview > child,
+iconview,
+treeview, treeview.view {
+  background-color: @view_bg_color;
+  color: @view_fg_color;
+}
+
+.sidebar, .navigation-sidebar, list.sidebar {
+  background-color: @sidebar_bg_color;
+  color: @sidebar_fg_color;
+}
+
+.gtkstyle-fallback:selected {
+  background-color: #B24D7A;
+  color: #FFFFFF;
+}
+
+.view:selected, .view:selected:focus,
+iconview:selected, iconview:selected:focus,
+textview text:selected, textview text:selected:focus {
+  background-color: #B24D7A;
+  color: #FFFFFF;
+}
+
+row:selected {
+  background-color: #B24D7A;
+  color: #FFFFFF;
+}
+
+entry:selected, entry selection {
+  background-color: #B24D7A;
+  color: #FFFFFF;
+}
+
+treeview.view:selected, treeview.view:selected:focus {
+  background-color: #B24D7A;
+  color: #FFFFFF;
+}
+
+* { border-radius: 0; }

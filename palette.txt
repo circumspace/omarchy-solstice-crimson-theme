@@ -1,0 +1,43 @@
+# Solstice Crimson — palette reference
+# Built on the original Solaris CDE "Crimson" palette (palettes/Crimson.dp in
+# netrunner01/cde; byte-identical to NsCDE data/palettes/Crimson.dp). Four
+# colors are byte-exact from the 48-bit original. Companion palette to
+# Solyaris.dp — identical except the steel slot (#718BA5 here vs #63639C
+# there), which is Crimson's identity. Cross-checked against color-hex
+# palette 40671 ("Solaris CDE Crimson"), a 5-color extract of the same source.
+
+chrome            #AEB2C3   # slot 2, exact — panels, bars, menubars (gtk css +
+                            # wallpaper generator base = desktop chrome)
+canvas            #FFF7E9   # slot 4, exact — terminal / text-editor background
+                            # (Omarchy terminal templates bind background here)
+steel             #718BA5   # slot 3, exact — troughs, recessed, inactive border
+rose              #B24D7A   # slot 1, exact — selection, active titlebar, focus
+ink               #000000   # primary foreground
+muted             #5D6069   # secondary text (color-hex extract; not in .dp)
+
+# Motif-derived bevels from chrome (CDE computes these at runtime; no .dp source)
+bevel_light       #DDDEE6   # raised highlight edges (topShadow)
+shadow            #5E606A   # deepest bevel shadows (bottomShadow)
+
+# ANSI 16 (terminal)
+color00  black    #FFF7E9  # pinned to background/canvas by the resolver
+color01  red      #C23D3D
+color02  green    #4A7A5A
+color03  yellow   #8D6D2B  # hue-preserved darkening of extracted #C4983B -> 4.5:1
+color04  blue     #4A6DA0
+color05  magenta  #B24D7A
+color06  cyan     #5A8A8A
+color07  white    #000000
+color08  br black #5D6069
+color09  br red   #CF5555
+color10  br green #5A8A6A
+color11  br yel   #A18026  # hue-preserved darkening of extracted #D4B04B -> 3.5:1
+color12  br blue  #5A7DB0
+color13  br mag   #CA6592
+color14  br cyan  #6A9A9A
+color15  br white #000000
+
+# Light companion: Solstice Daylight (Solyaris.dp skeleton)
+# https://github.com/circumspace/omarchy-solstice-daylight-theme
+# Dark companion: Solstice Nightwatch
+# https://github.com/circumspace/omarchy-solstice-nightwatch-theme
