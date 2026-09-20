@@ -1,58 +1,57 @@
 mode = "light"
 
-# Solstice Crimson — built on the original Solaris CDE "Crimson" palette
-# (palettes/Crimson.dp in netrunner01/cde, byte-identical to NsCDE's copy;
-# four colors byte-exact from the 48-bit original). Companion to Solstice
-# Daylight (Solyaris.dp skeleton); the two originals differ only in the steel
-# slot, which is Crimson's identity.
+# Solstice Crimson — built on the original Solaris CDE "Crimson4" palette
+# (palettes/Crimson4.dp in netrunner01/cde; also in NsCDE's collection).
+# A genuinely distinct member of the CDE Crimson family: deep crimson rose,
+# sage-green chrome, warm sand canvas, deeper steel for recessed surfaces.
 #
-# Chrome   #AEB2C3  grey-lavender panels, bars, menubars (exact)
-# Canvas   #FFF7E9  warm cream terminal / text-editor background (exact)
-# Steel    #718BA5  troughs, recessed surfaces, inactive border (exact)
-# Rose     #B24D7A  selection, active titlebar, focus, hover highlight (exact)
+# Rose     #A93F6C  selection, active titlebar, focus, hover (slot 1, exact)
+# Chrome   #9CB9AF  sage-grey panels, bars, menubars (slot 2, exact)
+# Steel    #65819C  troughs, recessed surfaces, inactive border (slot 3, exact)
+# Canvas   #F2E9D9  warm sand terminal / text-editor background (slot 4, exact)
 #
-# Terminal templates bind to 'background', which carries the canvas cream;
+# Terminal templates bind to 'background', which carries the sand canvas;
 # desktop chrome stays via hand-pinned gtk css and the wallpaper base.
 # color0/color7 are pinned to background/foreground by the resolver.
 
 # ── Structure ────────────────────────────────────────────────────────────────
-accent               = "#B24D7A"
-selection            = "#B24D7A"
-selection_background = "#B24D7A"
+accent               = "#A93F6C"
+selection            = "#A93F6C"
+selection_background = "#A93F6C"
 selection_foreground = "#FFFFFF"
 
-background           = "#FFF7E9"
-dark_background      = "#718BA5"
-darker_background    = "#5E606A"
-lighter_background   = "#DDDEE6"
+background           = "#F2E9D9"
+dark_background      = "#65819C"
+darker_background    = "#53635E"
+lighter_background   = "#D5E1DD"
 
 foreground           = "#000000"
-dark_foreground      = "#5E606A"
-light_foreground     = "#5D6069"
+dark_foreground      = "#53635E"
+light_foreground     = "#53635E"
 
 # Semantic colors without a color0..color15 slot.
 orange               = "#C2591E"   # battery/low indicators; not yellow
 brown                = "#8B7355"
 
 # ── Hyprland borders ───────────────────────────────────────────────────────
-hyprland_active_border   = "#B24D7A"
-hyprland_inactive_border = "#718BA5"
+hyprland_active_border   = "#A93F6C"
+hyprland_inactive_border = "#65819C"
 
 # ── ANSI 16-color palette (canonical) ──────────────────────────────────────
 # Yellows are hue-preserved darkenings of the CDE-extracted ambers, meeting
-# 4.5:1 (color3) / 3.5:1 (color11) on the cream canvas.
-color0  = "#FFF7E9"   # black   (pinned to background/canvas by the resolver)
+# 4.5:1 (color3) / 3.5:1 (color11) on the sand canvas.
+color0  = "#F2E9D9"   # black   (pinned to background/canvas by the resolver)
 color1  = "#C23D3D"   # red
 color2  = "#4A7A5A"   # green
-color3  = "#8D6D2B"   # yellow
+color3  = "#836527"   # yellow
 color4  = "#4A6DA0"   # blue
-color5  = "#B24D7A"   # magenta (rose accent)
+color5  = "#A93F6C"   # magenta (rose accent)
 color6  = "#5A8A8A"   # cyan
 color7  = "#000000"   # white   (ink — foreground)
-color8  = "#5D6069"   # br black  (muted)
+color8  = "#53635E"   # br black  (muted)
 color9  = "#CF5555"   # br red
 color10 = "#5A8A6A"   # br green
-color11 = "#A18026"   # br yellow
+color11 = "#957724"   # br yellow
 color12 = "#5A7DB0"   # br blue
 color13 = "#CA6592"   # br magenta
 color14 = "#6A9A9A"   # br cyan

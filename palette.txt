@@ -1,37 +1,35 @@
 # Solstice Crimson — palette reference
-# Built on the original Solaris CDE "Crimson" palette (palettes/Crimson.dp in
-# netrunner01/cde; byte-identical to NsCDE data/palettes/Crimson.dp). Four
-# colors are byte-exact from the 48-bit original. Companion palette to
-# Solyaris.dp — identical except the steel slot (#718BA5 here vs #63639C
-# there), which is Crimson's identity. Cross-checked against color-hex
-# palette 40671 ("Solaris CDE Crimson"), a 5-color extract of the same source.
+# Built on the original Solaris CDE "Crimson4" palette (palettes/Crimson4.dp
+# in netrunner01/cde; also shipped in NsCDE's collection). A distinct member
+# of the CDE Crimson family: deep crimson + sage chrome + warm sand canvas.
+# Every core color below is byte-exact from the 48-bit original.
 
-chrome            #AEB2C3   # slot 2, exact — panels, bars, menubars (gtk css +
-                            # wallpaper generator base = desktop chrome)
-canvas            #FFF7E9   # slot 4, exact — terminal / text-editor background
+rose              #A93F6C   # slot 1, exact — selection, active titlebar, focus
+chrome            #9CB9AF   # slot 2, exact — sage-grey panels, bars, menubars
+                            # (gtk css + wallpaper generator base = desktop chrome)
+steel             #65819C   # slot 3, exact — troughs, recessed, inactive border
+canvas            #F2E9D9   # slot 4, exact — terminal / text-editor background
                             # (Omarchy terminal templates bind background here)
-steel             #718BA5   # slot 3, exact — troughs, recessed, inactive border
-rose              #B24D7A   # slot 1, exact — selection, active titlebar, focus
 ink               #000000   # primary foreground
-muted             #5D6069   # secondary text (color-hex extract; not in .dp)
+muted             #53635E   # secondary text (Motif bottomShadow of chrome)
 
 # Motif-derived bevels from chrome (CDE computes these at runtime; no .dp source)
-bevel_light       #DDDEE6   # raised highlight edges (topShadow)
-shadow            #5E606A   # deepest bevel shadows (bottomShadow)
+bevel_light       #D5E1DD   # raised highlight edges (topShadow)
+shadow            #53635E   # deepest bevel shadows (bottomShadow)
 
 # ANSI 16 (terminal)
-color00  black    #FFF7E9  # pinned to background/canvas by the resolver
+color00  black    #F2E9D9  # pinned to background/canvas by the resolver
 color01  red      #C23D3D
 color02  green    #4A7A5A
-color03  yellow   #8D6D2B  # hue-preserved darkening of extracted #C4983B -> 4.5:1
+color03  yellow   #836527  # hue-preserved darkening of extracted #C4983B -> 4.5:1
 color04  blue     #4A6DA0
-color05  magenta  #B24D7A
+color05  magenta  #A93F6C
 color06  cyan     #5A8A8A
 color07  white    #000000
-color08  br black #5D6069
+color08  br black #53635E
 color09  br red   #CF5555
 color10  br green #5A8A6A
-color11  br yel   #A18026  # hue-preserved darkening of extracted #D4B04B -> 3.5:1
+color11  br yel   #957724  # hue-preserved darkening of extracted #D4B04B -> 3.5:1
 color12  br blue  #5A7DB0
 color13  br mag   #CA6592
 color14  br cyan  #6A9A9A

@@ -17,16 +17,16 @@ return {
 		opts = {
 			disable_italics = false,
 			colors = {
-				base00 = "#FFF7E9", base01 = "#E9E2D2", base02 = "#E4DCC7",
+				base00 = "#F2E9D9", base01 = "#DDD5C7", base02 = "#D9D1C3",
 				base03 = "#5E6472", base04 = "#4A4F5C", base05 = "#000000",
-				base06 = "#20222A", base07 = "#AEB2C3", base08 = "#B03535",
+				base06 = "#20222A", base07 = "#9CB9AF", base08 = "#B03535",
 				base09 = "#9E4E14", base0A = "#8A6608", base0B = "#3E6B4C",
 				base0C = "#2F6E6C", base0D = "#3E5E8C", base0E = "#A83F6E",
 				base0F = "#6E5737",
 			},
 		},
 		config = function(_, opts)
-			local rose, onrose = "#B24D7A", "#FFFFFF"
+			local rose, onrose = "#A93F6C", "#FFFFFF"
 			local C = {
 				code = "#333742",
 				body = "#22242C", identifier = "#22242C",
