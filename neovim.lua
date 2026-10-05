@@ -20,7 +20,7 @@ return {
 				base00 = "#F2E9D9", base01 = "#DDD5C7", base02 = "#D9D1C3",
 				base03 = "#5E6472", base04 = "#4A4F5C", base05 = "#000000",
 				base06 = "#20222A", base07 = "#9CB9AF", base08 = "#B03535",
-				base09 = "#9E4E14", base0A = "#8A6608", base0B = "#3E6B4C",
+				base09 = "#9E4E14", base0A = "#856208",
 				base0C = "#2F6E6C", base0D = "#3E5E8C", base0E = "#A83F6E",
 				base0F = "#6E5737",
 			},
@@ -30,7 +30,7 @@ return {
 			local C = {
 				code = "#333742",
 				body = "#22242C", identifier = "#22242C",
-				comment = "#5E6472", string = "#3E6B4C", number = "#8A6608",
+				comment = "#5E6472", string = "#3E6B4C", number = "#856208",
 				constant = "#9E4E14", keyword = "#A83F6E", operator = "#2F6E6C",
 				function_ = "#3E5E8C", type = "#6E5737", special = "#8A5A00",
 				link = "#3E5E8C",

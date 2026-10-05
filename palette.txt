@@ -11,7 +11,7 @@ steel             #65819C   # slot 3, exact — troughs, recessed, inactive bord
 canvas            #F2E9D9   # slot 4, exact — terminal / text-editor background
                             # (Omarchy terminal templates bind background here)
 ink               #000000   # primary foreground
-muted             #53635E   # secondary text (Motif bottomShadow of chrome)
+muted             #4A5953   # secondary text (Motif bottomShadow, darkened to 4.5:1)
 
 # Motif-derived bevels from chrome (CDE computes these at runtime; no .dp source)
 bevel_light       #D5E1DD   # raised highlight edges (topShadow)
@@ -19,20 +19,20 @@ shadow            #53635E   # deepest bevel shadows (bottomShadow)
 
 # ANSI 16 (terminal)
 color00  black    #F2E9D9  # pinned to background/canvas by the resolver
-color01  red      #C23D3D
-color02  green    #4A7A5A
+color01  red      #BA3B3B
+color02  green    #426D51
 color03  yellow   #836527  # hue-preserved darkening of extracted #C4983B -> 4.5:1
-color04  blue     #4A6DA0
+color04  blue     #476899
 color05  magenta  #A93F6C
-color06  cyan     #5A8A8A
+color06  cyan     #466B6B
 color07  white    #000000
-color08  br black #53635E
-color09  br red   #CF5555
-color10  br green #5A8A6A
-color11  br yel   #957724  # hue-preserved darkening of extracted #D4B04B -> 3.5:1
-color12  br blue  #5A7DB0
-color13  br mag   #CA6592
-color14  br cyan  #6A9A9A
+color08  br black #4A5953
+color09  br red   #BC3535
+color10  br green #4A7157
+color11  br yel   #7C631E  # hue-preserved darkening of extracted #D4B04B -> 4.5:1
+color12  br blue  #496998
+color13  br mag   #B43E72
+color14  br cyan  #4C7070
 color15  br white #000000
 
 # Light companion: Solstice Daylight (Solyaris.dp skeleton)

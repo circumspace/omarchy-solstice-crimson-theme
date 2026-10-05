@@ -26,12 +26,12 @@ darker_background    = "#53635E"
 lighter_background   = "#D5E1DD"
 
 foreground           = "#000000"
-dark_foreground      = "#53635E"
-light_foreground     = "#53635E"
+dark_foreground      = "#4A5953"
+light_foreground     = "#4A5953"
 
 # Semantic colors without a color0..color15 slot.
-orange               = "#C2591E"   # battery/low indicators; not yellow
-brown                = "#8B7355"
+orange               = "#A74D1A"   # battery/low indicators; not yellow
+brown                = "#786349"
 
 # ── Hyprland borders ───────────────────────────────────────────────────────
 hyprland_active_border   = "#A93F6C"
@@ -39,20 +39,20 @@ hyprland_inactive_border = "#65819C"
 
 # ── ANSI 16-color palette (canonical) ──────────────────────────────────────
 # Yellows are hue-preserved darkenings of the CDE-extracted ambers, meeting
-# 4.5:1 (color3) / 3.5:1 (color11) on the sand canvas.
+# 4.5:1 (color3, color11) on the sand canvas.
 color0  = "#F2E9D9"   # black   (pinned to background/canvas by the resolver)
-color1  = "#C23D3D"   # red
-color2  = "#4A7A5A"   # green
+color1  = "#BA3B3B"   # red
+color2  = "#426D51"   # green
 color3  = "#836527"   # yellow
-color4  = "#4A6DA0"   # blue
+color4  = "#476899"   # blue
 color5  = "#A93F6C"   # magenta (rose accent)
-color6  = "#5A8A8A"   # cyan
+color6  = "#466B6B"   # cyan
 color7  = "#000000"   # white   (ink — foreground)
-color8  = "#53635E"   # br black  (muted)
-color9  = "#CF5555"   # br red
-color10 = "#5A8A6A"   # br green
-color11 = "#957724"   # br yellow
-color12 = "#5A7DB0"   # br blue
-color13 = "#CA6592"   # br magenta
-color14 = "#6A9A9A"   # br cyan
+color8  = "#4A5953"   # br black  (muted)
+color9  = "#BC3535"   # br red
+color10 = "#4A7157"   # br green
+color11 = "#7C631E"   # br yellow
+color12 = "#496998"   # br blue
+color13 = "#B43E72"   # br magenta
+color14 = "#4C7070"   # br cyan
 color15 = "#000000"   # br white  (bright foreground)
